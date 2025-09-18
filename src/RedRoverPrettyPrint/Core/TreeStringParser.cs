@@ -12,7 +12,7 @@ public class TreeStringParser : ITreeStringParser
 
         Node root = new Node("root");
 
-        Node fullTree = ParseNodes(inputString, root);
+        Node fullTree = ParseNodes(cleanInputString, root);
 
         if (alphabatize) return OutputFormatter.AlphabatizeFormat(fullTree);
 
