@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace RedRoverPrettyPrint.Core;
 
-public class TreeStringParser : ITreeStringParser
+public interface ITreeStringParser
 {
-    public static string Parse(string inputString)
-    {
-        throw new NotImplementedException();
-    }
+    string Parse(string inputString);
 }
