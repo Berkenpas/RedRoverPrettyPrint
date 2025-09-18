@@ -7,7 +7,7 @@ public static class OutputFormatter
         throw new NotImplementedException();
     }
 
-    public static string AlphabatizeFormat(Node node);
+    public static string AlphabatizeFormat(Node node)
     {
         throw new NotImplementedException();
     }
