@@ -1,3 +1,5 @@
+using RedRoverPrettyPrint.Models;
+
 namespace RedRoverPrettyPrint.Foramtters;
 
 public static class OutputFormatter

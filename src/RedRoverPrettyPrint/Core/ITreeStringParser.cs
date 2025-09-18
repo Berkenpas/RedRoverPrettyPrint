@@ -8,5 +8,5 @@ namespace RedRoverPrettyPrint.Core;
 
 public interface ITreeStringParser
 {
-    string Parse(string inputString);
+    string Parse(string inputString, bool alphabatize);
 }

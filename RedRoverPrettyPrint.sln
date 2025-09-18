@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRoverPrettyPrint", "RedRoverPrettyPrint\RedRoverPrettyPrint.csproj", "{3EA210EE-DEEA-4F27-9943-41135646F5C1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B84BCBA8-B1F7-43EA-B1EC-89AEFBDB3AC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRoverPrettyPrint.Tests", "tests\RedRoverPrettyPrint.Tests\RedRoverPrettyPrint.Tests.csproj", "{18F26A0E-A19E-4747-AF69-217E1E52EC13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5AC9AD58-2C48-41B3-A3F3-C058301A5058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRoverPrettyPrint", "src\RedRoverPrettyPrint\RedRoverPrettyPrint.csproj", "{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +20,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{18F26A0E-A19E-4747-AF69-217E1E52EC13} = {B84BCBA8-B1F7-43EA-B1EC-89AEFBDB3AC9}
+		{F54EE17E-A2BA-4B09-A2A1-343B2D33CDF6} = {5AC9AD58-2C48-41B3-A3F3-C058301A5058}
 	EndGlobalSection
 EndGlobal
