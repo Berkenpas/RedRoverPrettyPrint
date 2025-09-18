@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRoverPrettyPrint", "RedRoverPrettyPrint\RedRoverPrettyPrint.csproj", "{3EA210EE-DEEA-4F27-9943-41135646F5C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B84BCBA8-B1F7-43EA-B1EC-89AEFBDB3AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRoverPrettyPrint.Tests", "tests\RedRoverPrettyPrint.Tests\RedRoverPrettyPrint.Tests.csproj", "{18F26A0E-A19E-4747-AF69-217E1E52EC13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA210EE-DEEA-4F27-9943-41135646F5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F26A0E-A19E-4747-AF69-217E1E52EC13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18F26A0E-A19E-4747-AF69-217E1E52EC13} = {B84BCBA8-B1F7-43EA-B1EC-89AEFBDB3AC9}
 	EndGlobalSection
 EndGlobal

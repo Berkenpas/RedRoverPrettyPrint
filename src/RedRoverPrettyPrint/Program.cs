@@ -7,7 +7,7 @@ namespace RedRoverPrettyPrint
     {
         static void Main(string[] args)
         {
-            var jsonString = File.ReadAllText("TestData/test-data.json");
+            var jsonString = File.ReadAllText("ExampleData/examples.json");
             var dict = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonString);
 
             Console.WriteLine("Welcome to the Red Rover Pretty Print! We print things pretty, formatted, and clean!\nWe hope you enjoy your time printing pretty!\n");
