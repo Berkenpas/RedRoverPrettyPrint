@@ -90,11 +90,14 @@ public class TreeStringParser : ITreeStringParser
 
     private static string ExtractParentName(string word)
     {
-        throw new NotImplementedException();
+        int openParenIndex = word.IndexOf('(');
+        return word.Substring(0, openParenIndex).Trim();
     }
 
     private static string ExtractChildren(string word)
     {
-        throw new NotImplementedException();
+        int openParenIndex = word.IndexOf('(');
+        int closedParenIndex = word.IndexOf(')');
+        return word.Substring(openParenIndex + 1, closedParenIndex);
     }
 }
