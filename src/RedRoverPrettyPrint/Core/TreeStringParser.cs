@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using System.Text;
 using RedRoverPrettyPrint.Foramtters;
 using RedRoverPrettyPrint.Models;
@@ -84,7 +85,7 @@ public class TreeStringParser : ITreeStringParser
 
     private static bool HasNestedContent(string word)
     {
-        throw new NotImplementedException();
+        return word.Contains('(') && word.Contains(')');
     }
 
     private static string ExtractParentName(string word)
