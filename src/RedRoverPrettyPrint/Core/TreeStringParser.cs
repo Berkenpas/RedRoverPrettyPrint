@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using RedRoverPrettyPrint.Foramtters;
@@ -12,22 +13,40 @@ public class TreeStringParser : ITreeStringParser
 {
     public string Parse(string inputString, bool alphabatize)
     {
-        Node fullTree = ParseNode(inputString);
+        string cleanInputString = inputString.Trim().Trim('(', ')');
+
+        Node root = new Node("root");
+
+        Node fullTree = ParseNodes(inputString);
 
         if (alphabatize) return OutputFormatter.AlphabatizeFormat(fullTree);
 
         return OutputFormatter.Format(fullTree);
     }
 
-    private static Node ParseNode(string inputString)
+    private static Node ParseNodes(string inputString, Node root)
     {
-        //Trim and split off of spaces
+        List<string> elements = SplitByCommaAndParentheses(inputString);
 
-        //Create root node
-        Node root = new Node("root");
+        foreach (string word in elements)
+        {
+            string trimmedWord = word.Trim();
+            if (string.IsNullOrWhiteSpace(trimmedWord)) continue;
 
-        //Iterate through and add child nodes or base nodes
+            if (is child)
+            {
+                root.Children.Add(new Node());
+            }
+            else {
+                root.Children.Add(new Node(trimmedWord));
+            }
+        }
 
         return root;
+    }
+
+    private static List<string> SplitByCommaAndParentheses(inputstring)
+    {
+        throw new NotImplementedException();
     }
 }
