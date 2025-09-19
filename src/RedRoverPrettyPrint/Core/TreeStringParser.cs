@@ -15,9 +15,7 @@ public class TreeStringParser : ITreeStringParser
 
         Node fullTree = ParseNodes(cleanInputString, root);
 
-        if (alphabatize) return OutputFormatter.AlphabatizeFormat(fullTree);
-
-        return OutputFormatter.Format(fullTree);
+        return OutputFormatter.FormatAsPrettyPrint(fullTree, alphabatize);
     }
 
     private static Node ParseNodes(string inputString, Node parent)
