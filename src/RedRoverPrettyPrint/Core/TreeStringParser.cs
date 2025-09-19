@@ -95,7 +95,7 @@ public class TreeStringParser
     private static string ExtractChildren(string word)
     {
         int openParenIndex = word.IndexOf('(');
-        int closedParenIndex = word.IndexOf(')');
+        int closedParenIndex = word.LastIndexOf(')');
         return word.Substring(openParenIndex + 1, closedParenIndex - openParenIndex - 1); 
     }
 }
