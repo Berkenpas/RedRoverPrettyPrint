@@ -1,5 +1,5 @@
 ﻿using RedRoverPrettyPrint.Core;
-using System.Text.Json;
+using RedRoverPrettyPrint.Data;
 
 namespace RedRoverPrettyPrint
 {
@@ -7,8 +7,7 @@ namespace RedRoverPrettyPrint
     {
         static void Main(string[] args)
         {
-            var jsonString = File.ReadAllText("ExampleData/examples.json");
-            var dict = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonString);
+            var dict = ExampleData.Examples;
             
             Console.WriteLine("Welcome to the Red Rover Pretty Print! We print things pretty, formatted, and clean!");
             Console.WriteLine("We hope you enjoy your time printing pretty!\n");
@@ -25,7 +24,7 @@ namespace RedRoverPrettyPrint
                 }
                 else
                 {
-                    ProcessExampleData(dict!);
+                    ProcessExampleData(dict);
                 }
 
                 Console.WriteLine("\nWould you like to continue? (Type 'Y' to continue or 'N' to exit)");
