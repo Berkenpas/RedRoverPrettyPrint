@@ -5,9 +5,9 @@ using RedRoverPrettyPrint.Models;
 
 namespace RedRoverPrettyPrint.Core;
 
-public class TreeStringParser : ITreeStringParser
+public class TreeStringParser
 {
-    public string Parse(string inputString, bool alphabatize)
+    public static string Parse(string inputString, bool alphabatize)
     {
         string cleanInputString = inputString.Trim().Trim('(', ')');
 
@@ -96,6 +96,6 @@ public class TreeStringParser : ITreeStringParser
     {
         int openParenIndex = word.IndexOf('(');
         int closedParenIndex = word.IndexOf(')');
-        return word.Substring(openParenIndex + 1, closedParenIndex);
+        return word.Substring(openParenIndex + 1, closedParenIndex - openParenIndex - 1); 
     }
 }
