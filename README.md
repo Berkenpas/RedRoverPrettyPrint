@@ -1,3 +1,28 @@
+# Running the App
+
+I put in an executable for a couple different operating systems, please use whatever your machine is:
+
+## Windows
+Go to the `windows/` folder and double-click `RedRoverPrettyPrint.exe`
+
+## Linux  
+```bash
+cd RunnableVersions/Linux/
+chmod +x RedRoverPrettyPrint
+./RedRoverPrettyPrint
+```
+
+## Mac
+```bash
+cd RunnableVersions/MacOS/
+chmod +x RedRoverPrettyPrint  
+./RedRoverPrettyPrint
+```
+
+If something breaks, you can always run from source with `dotnet run`.
+
+The app takes user input for a couple options. You can provide your own input or use some examples (including those provided in the instructions, as well as some new ones I added for funsies)
+
 # Red Rover Code Puzzle
 Thank you for your interest in joining our team.  The following coding exercise helps us get a sense for your approach to turning a requirement into code. If you have any questions please reach out.
 
@@ -39,4 +64,4 @@ And also to this output:
   - name
 ```
 
-Please send access to the source and a runnable copy of your app. 
+Please send access to the source and a runnable copy of your app.
