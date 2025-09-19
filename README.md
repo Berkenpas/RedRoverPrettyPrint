@@ -3,7 +3,7 @@
 I put in an executable for a couple different operating systems, please use whatever your machine is:
 
 ## Windows
-Go to the `windows/` folder and double-click `RedRoverPrettyPrint.exe`
+Go to the `RunnableVersions/windows/` folder and double-click `RedRoverPrettyPrint.exe`
 
 ## Linux  
 ```bash
@@ -21,7 +21,7 @@ chmod +x RedRoverPrettyPrint
 
 If something breaks, you can always run from source with `dotnet run`.
 
-The app takes user input for a couple options. You can provide your own input or use some examples (including those provided in the instructions, as well as some new ones I added for funsies)
+The app takes user input for a couple options. You can provide your own input or use some examples (including those provided in the instructions, as well as some new ones I added for funsies), and the program will ask whether or not you'd like the output alphabatized/sorted.
 
 # Red Rover Code Puzzle
 Thank you for your interest in joining our team.  The following coding exercise helps us get a sense for your approach to turning a requirement into code. If you have any questions please reach out.
