@@ -9,7 +9,12 @@ public class TreeStringParser
 {
     public static string Parse(string inputString, bool alphabatize)
     {
-        string cleanInputString = inputString.Trim().Trim('(', ')');
+        string cleanInputString = inputString.Trim();
+    
+        if (cleanInputString.StartsWith("(") && cleanInputString.EndsWith(")"))
+        {
+            cleanInputString = cleanInputString.Substring(1, cleanInputString.Length - 2);
+        }
 
         Node root = new Node("root");
 
